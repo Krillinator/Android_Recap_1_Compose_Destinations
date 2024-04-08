@@ -13,6 +13,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.krillinator.recap_1_navigation_composedestination.ui.composables.InputFormsUI
 import com.krillinator.recap_1_navigation_composedestination.ui.theme.Recap_1_Navigation_ComposeDestinationTheme
+import com.ramcosta.composedestinations.DestinationsNavHost
+import com.ramcosta.composedestinations.annotation.Destination
+import com.ramcosta.composedestinations.annotation.RootNavGraph
 
 class MainActivity : ComponentActivity() {
 
@@ -25,8 +28,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    HomeScreen()
-                    // DestinationsNavHost(navGraph = NavgGraphs.root)
+                    DestinationsNavHost(navGraph = NavGraphs.root)
                 }
             }
         }
@@ -35,6 +37,8 @@ class MainActivity : ComponentActivity() {
 }
 
 @Preview
+@RootNavGraph(start = true)
+@Destination
 @Composable
 fun HomeScreen() {
     Surface(

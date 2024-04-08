@@ -28,7 +28,6 @@ fun InputTitleUI(title: String) {
             color = Color.Black.copy(alpha = 0.6f),
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(24.dp)
         )
     }
     

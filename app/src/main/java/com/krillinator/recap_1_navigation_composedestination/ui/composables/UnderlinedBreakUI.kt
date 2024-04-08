@@ -19,8 +19,7 @@ fun UnderlinedBreak() {
     Surface(
         color = Color.Gray.copy(0.4f), // Set the color of the underlined row to gray
         modifier = Modifier
-            .padding(horizontal = 24.dp)
-            .padding(vertical = 48.dp)
+            .padding(bottom = 48.dp)
             .height(2.dp) // Adjust the height of the underlined row
     ) {
         // This empty space can be adjusted to control the spacing around the line

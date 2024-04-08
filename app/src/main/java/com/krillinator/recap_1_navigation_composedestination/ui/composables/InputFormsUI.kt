@@ -28,18 +28,24 @@ fun InputFormsUI() {
         mutableStateOf("")
     }
 
+    // TODO - Themes
+    // TODO - Break 14:24
+
     Surface(
         shadowElevation = 12.dp,
         modifier = Modifier
             .padding(24.dp)
     ) {
         Column(
-            modifier = Modifier.padding(bottom = 60.dp)
+            modifier = Modifier
+                .padding(top = 24.dp)
+                .padding(horizontal = 24.dp)
+                .padding(bottom = 60.dp)
         ) {
             InputTitleUI(title = "Hello World")
 
             Column(
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.CenterHorizontally,
             ) {
                 UnderlinedBreak()
                 InputFieldUI("Username", "Username",input = input, onValueChangeInput = { input = it })

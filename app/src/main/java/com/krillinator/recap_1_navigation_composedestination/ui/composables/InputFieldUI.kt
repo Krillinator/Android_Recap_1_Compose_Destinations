@@ -27,12 +27,8 @@ fun InputFieldUI(
 ) {
     Surface(
         modifier = Modifier
-            // .fillMaxWidth()
     ) {
-        Row(
-            modifier = Modifier
-                .padding(horizontal = 24.dp)
-        ) {
+        Row {
             OutlinedTextField(
                 placeholder = { Text(text = "$placeholderText...", fontSize = 12.sp, color = Color.Black.copy(0.4f)) },
                 label = { Text(text = labelText) },
@@ -40,6 +36,7 @@ fun InputFieldUI(
                 onValueChange = onValueChangeInput,
                 modifier = Modifier
                     .fillMaxWidth()
+                    .padding(bottom = 24.dp)
             )
         }
     }
