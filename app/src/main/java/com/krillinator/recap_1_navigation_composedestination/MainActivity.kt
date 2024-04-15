@@ -9,10 +9,15 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.krillinator.recap_1_navigation_composedestination.ui.composables.FoxUI
 import com.krillinator.recap_1_navigation_composedestination.ui.composables.InputFormsUI
+import com.krillinator.recap_1_navigation_composedestination.ui.composables.LoadImageFromUrl
 import com.krillinator.recap_1_navigation_composedestination.ui.theme.Recap_1_Navigation_ComposeDestinationTheme
+import com.krillinator.recap_1_navigation_composedestination.ui.viewModels.FoxViewModel
 import com.ramcosta.composedestinations.DestinationsNavHost
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.annotation.RootNavGraph
@@ -45,6 +50,7 @@ fun HomeScreen() {
         modifier = Modifier.fillMaxSize()
     ) {
         Column {
+            FoxUI()
             InputFormsUI()
         }
     }

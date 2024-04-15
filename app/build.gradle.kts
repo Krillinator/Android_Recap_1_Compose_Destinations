@@ -58,6 +58,20 @@ dependencies {
     implementation("io.github.raamcosta.compose-destinations:core:1.10.2")
     ksp("io.github.raamcosta.compose-destinations:ksp:1.10.2")
 
+    // Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+
+    // GSON
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // ViewModel Scope
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+
+    // coil - Image Loader
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
+
+
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
